@@ -1,0 +1,7 @@
+services:
+  ib-gateway:
+    build: .
+
+    env_file: .env
+    ports:
+      - "4002:4002"
