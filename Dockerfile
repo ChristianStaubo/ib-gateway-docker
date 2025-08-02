@@ -7,15 +7,16 @@ RUN apt-get update && apt-get install -y \
   unzip \
   xvfb \
   socat \
+  x11vnc \
+  xdotool \
+  x11-utils \
+  wmctrl \
+  expect \
   libxrender1 \
   libxtst6 \
   libxi6 \
   libgtk2.0-0 \
   libnss3 \
-  x11-utils \
-  x11vnc \
-  wmctrl \
-  expect \
   && apt-get clean
 
 ENV IB_GATEWAY_VERSION=1039
