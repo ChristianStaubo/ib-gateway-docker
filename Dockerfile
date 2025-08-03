@@ -17,6 +17,7 @@ RUN apt-get update && apt-get install -y \
   libxi6 \
   libgtk2.0-0 \
   libnss3 \
+  && which xdotool \
   && apt-get clean
 
 ENV IB_GATEWAY_VERSION=1039
